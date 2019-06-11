@@ -1,0 +1,10 @@
+1:-- https://www.mi.com/in/mi-band-hrx/
+2:-- https://store.mi.com/in/accessories/264
+3:-- https://www.mi.com/in/list/
+4:-- https://store.mi.com/in/item/3184300014   product page
+
+
+
+5    https://www.mi.com/in/mi-band-3/
+band page::
+video link  :: (<video class="bracelet-video" src="https://i01.appmifile.com/webfile/globalimg/mi-band-3/mj-shouhuan-video.mp4" poster="https://i01.appmifile.com/webfile/globalimg/mi-band-3/mj-shouhuan-2.jpg" loop=""></video>)
