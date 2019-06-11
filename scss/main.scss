@@ -1,1 +1,141 @@
 @import "vender/bootstrap";
+@import "variable/variable";
+.top-nav{
+  background-color: $top-nav-bg-color;
+  text-transform: uppercase;
+  .left-nav{
+    float: left;
+    border-right: 1px solid;
+    li{
+      margin: 0 20px 0 21px;
+      font-size: 12px;
+      line-height: 40px;
+      position: relative;
+      &:not(:first-child):before{
+        content: '';
+        position: absolute;
+        left: -20px;
+        top: 50%;
+        margin-top: -6px;
+        width: 1px;
+        height: 12px;
+        background-color: $line-color;
+      }
+      a{
+        color: $link-color;
+        transition: .3s ease-out;
+        &:hover{
+          color: $link-hover;
+          text-decoration: none;
+        }
+      }
+    }
+    .dRop-down{
+      position: relative;
+      a{
+        margin: 0 15px;
+        line-height: 40px;
+        display: block;
+      }
+      .dRop-down-menu{
+        position: absolute;
+        top: 0%;
+        left: 0;
+        transition: .3s ease-out;
+        opacity: 0;
+        visibility: hidden;
+        padding: 7px 0;
+        width: 200px;
+        box-shadow: 0 3px 4px rgba(0,0,0,.18);
+        a{
+          display: block;
+          color: $line-color;
+          margin: 0;
+          padding: 0 10px;
+          &:hover{
+            color: $dropdown-link-color;
+            background: $dropdown-link-bg;
+          }
+        }
+      }
+      &:hover{
+        background: $link-hover;
+        a{
+          color: $line-color;
+          &:hover{
+            color: $dropdown-link-color;
+          }
+        }
+        .dRop-down-menu{
+          visibility: visible;
+          opacity: 1;
+          top: 100%;
+        }
+      }
+    }
+  }
+  .right-nav{
+    float: right;
+    li{
+      margin: 0 20px 0 21px;
+      font-size: 12px;
+      line-height: 40px;
+      position: relative;
+      &:not(:last-child):after{
+        content: '';
+        position: absolute;
+        right: -20px;
+        top: 50%;
+        margin-top: -6px;
+        width: 1px;
+        height: 12px;
+        background-color: $line-color;
+      }
+      a{
+        color: $link-color;
+        transition: .3s ease-out;
+        &:hover{
+          color: $link-hover;
+          text-decoration: none;
+        }
+      }
+    }
+    .drop-down{
+      position: relative;
+      a{
+        margin: 0 15px;
+        line-height: 40px;
+        display: block;
+      }
+      .drop-down-menu{
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        padding: 40px 0;
+        top: 0%;
+        width: 250px;
+        transition: .3s ease-out;
+        right: 0;
+        box-shadow: 0 3px 4px rgba(0,0,0,.18);
+        p{
+          font-weight: 600;
+          font-size: 14px;
+        }
+      }
+      &:hover{
+        background: $link-hover;
+        a{
+          color: $line-color;
+          &:hover{
+            color: $dropdown-link-color;
+          }
+        }
+        .drop-down-menu{
+          visibility: visible;
+          opacity: 1;
+          top: 100%;
+        }
+      }
+    }
+  }
+}
