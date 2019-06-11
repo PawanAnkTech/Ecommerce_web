@@ -7590,5 +7590,26 @@ a.text-dark:hover, a.text-dark:focus {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
+.slick-slider {
+  z-index: 0; }
+  .slick-slider .slick-arrow {
+    top: 50%;
+    left: 80px;
+    position: absolute;
+    transform: translate(0, -50%);
+    z-index: 2; }
+  .slick-slider .slick-prev:before, .slick-slider .slick-next:before {
+    content: " ";
+    display: block;
+    background: url(../img/icon-slide-nav1.png) no-repeat 22px 0;
+    background-size: cover;
+    width: 3.75rem;
+    height: 3.75rem;
+    opacity: 1; }
+  .slick-slider .slick-next {
+    left: unset;
+    right: 5rem; }
+    .slick-slider .slick-next:before {
+      background: url(../img/icon-slide-nav1.png) no-repeat -36px 0; }
 
 /*# sourceMappingURL=main.css.map */

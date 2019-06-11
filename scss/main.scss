@@ -1,1 +1,33 @@
 @import "vender/bootstrap";
+@import "base/base";
+@import "position/position";
+@import "function/function";
+
+
+
+.slick-slider{
+  z-index: 0;
+  .slick-arrow {
+    @include absolute(left 80px top 50%);
+    transform: translate(0 , -50%);
+    z-index: 2;
+  }
+  .slick-prev,.slick-next{
+    &:before{
+      content: " ";
+      display: block;
+      background: url(../img/icon-slide-nav1.png) no-repeat 22px 0;
+      background-size: cover;
+      width: Rem(60);
+      height: Rem(60);
+      opacity: 1;
+    }
+  }
+  .slick-next {
+    left: unset;
+    right: Rem(80);
+    &:before{
+      background: url(../img/icon-slide-nav1.png) no-repeat -36px 0;
+    }
+  }
+}
