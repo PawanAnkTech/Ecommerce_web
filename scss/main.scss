@@ -1,11 +1,16 @@
 @import "vender/bootstrap";
 @import "variable/variable";
+@import "mixins/mixin";
+
+
+/** header */
+/** top-nav */
 .top-nav{
   background-color: $top-nav-bg-color;
   text-transform: uppercase;
+  /** left-nav */
   .left-nav{
     float: left;
-    border-right: 1px solid;
     li{
       margin: 0 20px 0 21px;
       font-size: 12px;
@@ -19,7 +24,7 @@
         margin-top: -6px;
         width: 1px;
         height: 12px;
-        background-color: $line-color;
+        background-color: $primary-color;
       }
       a{
         color: $link-color;
@@ -30,46 +35,37 @@
         }
       }
     }
-    .dRop-down{
-      position: relative;
-      a{
-        margin: 0 15px;
-        line-height: 40px;
-        display: block;
+    .dropdown{
+      .store-type{
+        margin: 0 20px;
       }
-      .dRop-down-menu{
-        position: absolute;
-        top: 0%;
-        left: 0;
-        transition: .3s ease-out;
-        opacity: 0;
-        visibility: hidden;
-        padding: 7px 0;
-        width: 200px;
+      .dropdown-menu{
         box-shadow: 0 3px 4px rgba(0,0,0,.18);
+        min-width: 200px;
         a{
           display: block;
-          color: $line-color;
+          padding: 0 15px;
+          font-size: 12px;
           margin: 0;
-          padding: 0 10px;
-          &:hover{
-            color: $dropdown-link-color;
-            background: $dropdown-link-bg;
-          }
+          color: #424242;
         }
       }
       &:hover{
-        background: $link-hover;
-        a{
-          color: $line-color;
+        background: #fff;
+        .store-type{
+          color: #424242;
           &:hover{
             color: $dropdown-link-color;
           }
         }
-        .dRop-down-menu{
-          visibility: visible;
-          opacity: 1;
-          top: 100%;
+        .dropdown-menu{
+          display: block;
+          a{
+            &:hover{
+              color: $dropdown-link-color;
+              background: $dropdown-link-bg;
+            }
+          }
         }
       }
     }
@@ -89,7 +85,7 @@
         margin-top: -6px;
         width: 1px;
         height: 12px;
-        background-color: $line-color;
+        background-color: $primary-color;
       }
       a{
         color: $link-color;
@@ -100,42 +96,105 @@
         }
       }
     }
-    .drop-down{
-      position: relative;
+    .dropdown{
       a{
-        margin: 0 15px;
-        line-height: 40px;
-        display: block;
+        margin: 0 20px;
       }
-      .drop-down-menu{
-        position: absolute;
-        visibility: hidden;
-        opacity: 0;
+      .dropdown-menu{
         padding: 40px 0;
-        top: 0%;
-        width: 250px;
-        transition: .3s ease-out;
-        right: 0;
         box-shadow: 0 3px 4px rgba(0,0,0,.18);
-        p{
-          font-weight: 600;
-          font-size: 14px;
-        }
+        min-width: 250px;
+        left: unset;
+        right: 0 !important;
       }
       &:hover{
-        background: $link-hover;
+        background: #fff;
         a{
-          color: $line-color;
+          color: #424242;
           &:hover{
             color: $dropdown-link-color;
           }
         }
-        .drop-down-menu{
-          visibility: visible;
-          opacity: 1;
-          top: 100%;
+        &:hover{
+          .dropdown-menu{
+            display: block;
+          }
         }
       }
     }
+  }
+}
+
+/** main-nav */
+.main-nav{
+  height: 88px;
+  width: 100%;
+  .mi-logo{
+    width: 56px;
+    height: 56px;
+    margin: 16px 0 0;
+    float: left;
+    overflow: hidden;
+    img{
+      position: relative;
+      left: -56px;
+      transition: .3s ease-out;
+    }
+    &:hover{
+      img{
+        left: 0px;
+      }
+    }
+  }
+  .category{
+    ul{
+      li{
+        padding: 32px 0;
+        font-size: 14px;
+      }
+      .list-inline-item{
+        .dropdown-menu{
+          border: none;
+          border-top: 1px solid #eee;
+          margin: 0;
+          width: 100%;
+        }
+        &:hover{
+          .dropdown-menu{
+            display: block;
+          }
+        }
+      }
+      .item-link{
+        margin: 0 16px;
+        color: $primary-color;
+        text-decoration: none;
+        display: block;
+        &:hover {
+          color: $dropdown-link-color;
+        }
+      }
+      .item{
+        margin: 0 35px 0 0;
+      }
+      a{
+        margin: 0;
+        padding: 0;
+        color: $primary-color;
+        text-decoration: none;
+      }
+      p{
+        color: $dropdown-link-color;
+        font-weight: 400;
+      }
+    }
+  }
+}
+.search-box{
+  input[type="text"]{
+    border: none;
+    border-bottom: 1px solid;
+    font-size: 14px;
+    outline: none;
   }
 }
