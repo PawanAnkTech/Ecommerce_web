@@ -4,19 +4,19 @@
 @import "function/function";
 
 
-
-.slick-slider{
+ // slick slider css
+.slick-slider {
   z-index: 0;
   .slick-arrow {
     @include absolute(left 80px top 50%);
     transform: translate(0 , -50%);
     z-index: 2;
   }
-  .slick-prev,.slick-next{
-    &:before{
+  .slick-prev,.slick-next {
+    &:before {
       content: " ";
       display: block;
-      background: url(../img/icon-slide-nav1.png) no-repeat 22px 0;
+      background: url(../img/icon-slide-nav1.png) no-repeat Rem(22) 0;
       background-size: cover;
       width: Rem(60);
       height: Rem(60);
@@ -26,8 +26,70 @@
   .slick-next {
     left: unset;
     right: Rem(80);
-    &:before{
+    &:before {
       background: url(../img/icon-slide-nav1.png) no-repeat -36px 0;
     }
   }
+  .slider-img {
+    @include relative();
+    cursor: pointer;
+    img{
+      transform: scaley(1.3) scaleX(1.4);
+    }
+  }
+  .banner-content {
+    @include absolute(left 0 top 0 right 0 bottom 0);
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    .product-dis {
+      font-size: Rem(18);
+      letter-spacing: Rem(.3);
+    }
+    .price-start {
+      font-size: Rem(24);
+      .price {
+        font-size: Rem(30);
+      }
+    }
+    .buy-btn {
+      padding: Rem(12) Rem(30);
+      width: 20%;
+      @include transition(all, linear, 400ms);
+      &:hover {
+        background: #fff;
+        color: #000 !important;
+      }
+    }
+    .note-pro-btn{
+      &:hover{
+        background: #000;
+        color: #fff !important;
+      }
+    }
+  }
+  .slick-dots{
+    bottom: 25px;
+    li{
+      button{
+        width: Rem(15);
+        height: Rem(15);
+        &:before{
+          content: "";
+          width: Rem(15);
+          height: Rem(15);
+          border-radius: 50%;
+          border: Rem(1) solid #fff;
+        }
+        &[aria-selected="true"]{
+          &:before{
+            background: #fff;
+          }
+        }
+      }
+    }
+  }
 }
+
+
+// slick slider css end
