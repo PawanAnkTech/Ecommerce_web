@@ -92,3 +92,16 @@
 
 
 // slick slider css end
+// ads section start
+.google-ads{
+  .ad-img{
+    @include transition(all, linear, 400ms);
+    &:hover{
+      box-shadow: 0px 19px 35px -28px #000;
+    }
+  }
+}
+
+
+
+// ads section end!
