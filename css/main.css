@@ -7593,10 +7593,8 @@ a.text-dark:hover, a.text-dark:focus {
 .slick-slider {
   z-index: 0; }
   .slick-slider .slick-arrow {
-    top: 50%;
     left: 80px;
     position: absolute;
-    transform: translate(0, -50%);
     z-index: 2; }
   .slick-slider .slick-prev:before, .slick-slider .slick-next:before {
     content: " ";
