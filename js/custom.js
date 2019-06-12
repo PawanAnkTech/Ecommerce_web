@@ -12,4 +12,10 @@ $('.fade').slick({
  });
 
    AOS.init();
- 
+
+
+//  $(document).ready(function(){
+// 	$("#Divone").hover(function(){
+// 		$(this).addClass("Mydivadd");
+// 	});
+// });

@@ -105,3 +105,51 @@
 
 
 // ads section end!
+// section products start--
+.section-heading{
+  .heading{
+    @include relative();
+    &:after,&:before{
+      content: "";
+      @include absolute(left 0 top 50%);
+      transform: translate(0 , -50%);
+      width: 30%;
+      height: .5px;
+      background: #d4d4d4;
+    }
+    &:after{
+      left: unset;
+      right: 0;
+    }
+  }
+}
+.grid-img{
+  img{
+    @include transition(all, ease-in-out, 400ms);
+    &:hover{
+      box-shadow: 0px 1px 26px -10px #000000cf;
+      z-index: 2;
+      @include absolute();
+    }
+  }
+}
+// product section end
+// accessories section starts
+.accessoires-contents{
+  .accessories-link{
+    &:hover{
+      color: orangered !important;
+    }
+  }
+  .music-items{
+    box-shadow: 1px 1px 5px 0.3px #ddd;
+    &:hover{
+      box-shadow: 0px 1px 26px -10px #000000cf;
+    }
+    .item-amount{
+      color: orangered !important;
+    }
+  }
+}
+
+// accessories section end
