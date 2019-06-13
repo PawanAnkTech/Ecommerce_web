@@ -286,3 +286,69 @@ footer{
     }
   }
 }
+
+/** product-review */
+.section-bg{
+  background: $dropdown-link-bg;
+}
+.product-review{
+  .review-header{
+    margin: 68px auto 40px;
+  }
+  .camera-review{
+    transition: .3s ease-out;
+    &:hover{
+      box-shadow: 0 8px 16px rgba(0,0,0,.18);
+    }
+  }
+  .img-detail{
+    padding: 22px 160px 22px 22px;
+    h4{
+      font-size: 18px;
+    }
+    a{
+      text-decoration: none;
+      color: $review-text;
+    }
+    p{
+      font-size: 14px;
+      a{
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+    span{
+      margin-left: 32px;
+      color: $dropdown-link-color;
+    }
+  }
+  .sound-review{
+    transition: .3s ease-out;
+    &:hover{
+      box-shadow: 0 8px 16px rgba(0,0,0,.18);
+    }
+  }
+  h2{
+    position: relative;
+    color: $review-text;
+    &:before{
+      content: "";
+      right: 25px;
+      position: absolute;
+      top: 14px;
+      width: 344px;
+      height: 1px;
+      background-color: $secondary-color;
+    }
+    &:after{
+      left: 25px;
+      content: "";
+      position: absolute;
+      top: 14px;
+      width: 344px;
+      height: 1px;
+      background-color: $secondary-color;
+    }
+  }
+}

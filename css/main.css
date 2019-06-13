@@ -7794,4 +7794,52 @@ footer {
     .copy-right .dropdown-item a:hover {
       color: #ff6700; }
 
+/** product-review */
+.section-bg {
+  background: #f5f5f5; }
+
+.product-review .review-header {
+  margin: 68px auto 40px; }
+.product-review .camera-review {
+  transition: .3s ease-out; }
+  .product-review .camera-review:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18); }
+.product-review .img-detail {
+  padding: 22px 160px 22px 22px; }
+  .product-review .img-detail h4 {
+    font-size: 18px; }
+  .product-review .img-detail a {
+    text-decoration: none;
+    color: #616161; }
+  .product-review .img-detail p {
+    font-size: 14px; }
+    .product-review .img-detail p a:hover {
+      text-decoration: underline; }
+  .product-review .img-detail span {
+    margin-left: 32px;
+    color: #ff6700; }
+.product-review .sound-review {
+  transition: .3s ease-out; }
+  .product-review .sound-review:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18); }
+.product-review h2 {
+  position: relative;
+  color: #616161; }
+  .product-review h2:before {
+    content: "";
+    right: 25px;
+    position: absolute;
+    top: 14px;
+    width: 344px;
+    height: 1px;
+    background-color: #e0e0e0; }
+  .product-review h2:after {
+    left: 25px;
+    content: "";
+    position: absolute;
+    top: 14px;
+    width: 344px;
+    height: 1px;
+    background-color: #e0e0e0; }
+
 /*# sourceMappingURL=main.css.map */
