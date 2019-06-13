@@ -271,7 +271,7 @@ footer{
   }
   a[aria-expanded="true"]{
     background: #fff;
-    color: #757575;
+    color: $footer-link;
     border-top: 1px solid;
   }
   .dropdown-item{
@@ -279,7 +279,7 @@ footer{
       background-color: transparent;
     }
     a{
-      color: #757575;
+      color: $footer-link;
       &:hover{
         color: $dropdown-link-color;
       }
