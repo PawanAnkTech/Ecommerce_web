@@ -7702,6 +7702,7 @@ a.text-dark:hover, a.text-dark:focus {
     font-size: 14px; }
   .main-nav .category ul .list-inline-item .dropdown-menu {
     border-top: 1px solid #eee !important;
+    border-radius: 0;
     width: 100%; }
   .main-nav .category ul .list-inline-item:hover .dropdown-menu {
     display: block; }
@@ -7772,9 +7773,20 @@ footer {
     margin-top: 15px; }
   .copy-right .location-link {
     display: block;
-    font-size: 16px; }
+    font-size: 16px;
+    padding: 0 40px 0 24px;
+    border-top: 1px solid transparent; }
   .copy-right .dropdown-menu {
-    padding: 12px 0; }
+    height: 400px;
+    overflow: auto;
+    transition: .3s ease-out;
+    margin: 0;
+    border: 0;
+    border-radius: 0; }
+  .copy-right a[aria-expanded="true"] {
+    background: #fff;
+    color: #757575;
+    border-top: 1px solid; }
   .copy-right .dropdown-item:hover {
     background-color: transparent; }
   .copy-right .dropdown-item a {
