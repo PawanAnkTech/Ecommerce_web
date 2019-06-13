@@ -7595,7 +7595,8 @@ a.text-dark:hover, a.text-dark:focus {
 .top-nav {
   background-color: #212121;
   text-transform: uppercase;
-  /** left-nav */ }
+  /** left-nav */
+  /* right-nav */ }
   .top-nav .left-nav {
     float: left; }
     .top-nav .left-nav li {
@@ -7682,7 +7683,8 @@ a.text-dark:hover, a.text-dark:focus {
 /** main-nav */
 .main-nav {
   height: 88px;
-  width: 100%; }
+  width: 100%;
+  /** product categories */ }
   .main-nav .mi-logo {
     width: 56px;
     height: 56px;
@@ -7699,9 +7701,7 @@ a.text-dark:hover, a.text-dark:focus {
     padding: 32px 0;
     font-size: 14px; }
   .main-nav .category ul .list-inline-item .dropdown-menu {
-    border: none;
-    border-top: 1px solid #eee;
-    margin: 0;
+    border-top: 1px solid #eee !important;
     width: 100%; }
   .main-nav .category ul .list-inline-item:hover .dropdown-menu {
     display: block; }
@@ -7723,10 +7723,63 @@ a.text-dark:hover, a.text-dark:focus {
     color: #ff6700;
     font-weight: 400; }
 
+/** search-box */
 .search-box input[type="text"] {
   border: none;
   border-bottom: 1px solid;
   font-size: 14px;
   outline: none; }
+
+/** footer */
+footer {
+  background-color: #212121;
+  color: #b0b0b0; }
+  footer .footer-wrapper {
+    padding: 40px 0 60px; }
+  footer a {
+    display: block;
+    font-size: 12px;
+    line-height: 32px;
+    transition: .3s ease-out;
+    color: #b0b0b0; }
+    footer a:hover {
+      color: #fff;
+      text-decoration: none; }
+  footer span {
+    display: block; }
+    footer span a {
+      display: inline; }
+
+.chat-link {
+  color: #fff;
+  border: 1px solid #eee;
+  font-size: 14px;
+  margin-top: 14px;
+  line-height: 38px;
+  transition: .3s ease-out; }
+  .chat-link:hover {
+    text-decoration: none;
+    background: #eee;
+    color: #212121; }
+
+/** copy-right */
+.copy-right {
+  border-top: 1px solid #424242;
+  line-height: 70px; }
+  .copy-right .location-menu {
+    height: 40px;
+    line-height: 40px;
+    margin-top: 15px; }
+  .copy-right .location-link {
+    display: block;
+    font-size: 16px; }
+  .copy-right .dropdown-menu {
+    padding: 12px 0; }
+  .copy-right .dropdown-item:hover {
+    background-color: transparent; }
+  .copy-right .dropdown-item a {
+    color: #757575; }
+    .copy-right .dropdown-item a:hover {
+      color: #ff6700; }
 
 /*# sourceMappingURL=main.css.map */

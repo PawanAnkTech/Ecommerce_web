@@ -47,13 +47,13 @@
           padding: 0 15px;
           font-size: 12px;
           margin: 0;
-          color: #424242;
+          color: $primary-color;
         }
       }
       &:hover{
-        background: #fff;
+        background: $link-hover;
         .store-type{
-          color: #424242;
+          color: $primary-color;
           &:hover{
             color: $dropdown-link-color;
           }
@@ -70,6 +70,8 @@
       }
     }
   }
+
+  /* right-nav */
   .right-nav{
     float: right;
     li{
@@ -108,9 +110,9 @@
         right: 0 !important;
       }
       &:hover{
-        background: #fff;
+        background: $link-hover;
         a{
-          color: #424242;
+          color: $primary-color;
           &:hover{
             color: $dropdown-link-color;
           }
@@ -146,6 +148,8 @@
       }
     }
   }
+
+  /** product categories */
   .category{
     ul{
       li{
@@ -154,9 +158,7 @@
       }
       .list-inline-item{
         .dropdown-menu{
-          border: none;
-          border-top: 1px solid #eee;
-          margin: 0;
+          border-top: 1px solid $border !important;
           width: 100%;
         }
         &:hover{
@@ -190,11 +192,84 @@
     }
   }
 }
+
+/** search-box */
 .search-box{
   input[type="text"]{
     border: none;
     border-bottom: 1px solid;
     font-size: 14px;
     outline: none;
+  }
+}
+
+
+/** footer */
+footer{
+  background-color: $top-nav-bg-color;
+  color: $link-color;
+  .footer-wrapper{
+    padding: 40px 0 60px;
+
+  }
+  a{
+    display: block;
+    font-size: 12px;
+    line-height: 32px;
+    transition: .3s ease-out;
+    color: $link-color;
+    &:hover{
+      color: $link-hover;
+      text-decoration: none;
+    }
+  }
+  span{
+    display: block;
+    a{
+      display: inline;
+    }
+  }
+}
+.chat-link{
+  color: $link-hover;
+  border: 1px solid $border;
+  font-size: 14px;
+  margin-top: 14px;
+  line-height: 38px;
+  transition: .3s ease-out;
+  &:hover{
+    text-decoration: none;
+    background: $border;
+    color: $top-nav-bg-color
+  }
+}
+
+
+/** copy-right */
+.copy-right{
+  border-top: 1px solid $primary-color;
+  line-height: 70px;
+  .location-menu{
+    height: 40px;
+    line-height: 40px;
+    margin-top: 15px;
+  }
+  .location-link{
+    display: block;
+    font-size: 16px;
+  }
+  .dropdown-menu{
+    padding: 12px 0;
+  }
+  .dropdown-item{
+    &:hover{
+      background-color: transparent;
+    }
+    a{
+      color: #757575;
+      &:hover{
+        color: $dropdown-link-color;
+      }
+    }
   }
 }
