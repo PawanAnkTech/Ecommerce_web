@@ -3,6 +3,21 @@
 @import "position/position";
 @import "function/function";
 
+$bg-black: #000;
+$bg-white: #fff;
+$bg-dark-grey: #d4d4d4;
+$light-black: rgba(0, 0, 0, 0.55);
+$grey: #ddd;
+$orangered: #ff6700;
+$light-peach: #f5f5f5;
+
+
+// globle class start
+.bg-peach{
+  background: $light-peach;
+}
+
+// globle class end
 
  // slick slider css
 .slick-slider {
@@ -56,14 +71,14 @@
       width: 20%;
       @include transition(all, linear, 400ms);
       &:hover {
-        background: #fff;
-        color: #000 !important;
+        background:$bg-white ;
+        color: $bg-black !important;
       }
     }
     .note-pro-btn{
       &:hover{
-        background: #000;
-        color: #fff !important;
+        background: $bg-black;
+        color: $bg-white !important;
       }
     }
   }
@@ -78,11 +93,11 @@
           width: Rem(15);
           height: Rem(15);
           border-radius: 50%;
-          border: Rem(1) solid #fff;
+          border: Rem(1) solid $bg-white;
         }
         &[aria-selected="true"]{
           &:before{
-            background: #fff;
+            background: $bg-white;
           }
         }
       }
@@ -97,7 +112,7 @@
   .ad-img{
     @include transition(all, linear, 400ms);
     &:hover{
-      box-shadow: 0px 19px 35px -28px #000;
+      box-shadow: 0px 19px 35px -28px $bg-black;
     }
   }
 }
@@ -115,7 +130,7 @@
       transform: translate(0 , -50%);
       width: 30%;
       height: .5px;
-      background: #d4d4d4;
+      background: $bg-dark-grey;
     }
     &:after{
       left: unset;
@@ -127,7 +142,7 @@
   img{
     @include transition(all, ease-in-out, 400ms);
     &:hover{
-      box-shadow: 0px 1px 26px -10px #000000cf;
+      box-shadow: 0px 1px 26px -10px $light-black;
       z-index: 2;
       @include absolute();
     }
@@ -142,12 +157,16 @@
     }
   }
   .music-items{
-    box-shadow: 1px 1px 5px 0.3px #ddd;
+    box-shadow: 1px 1px 3px 0.3px $grey;
+    margin-bottom: Rem(10);
+    @include transition(all, linear, 400ms);
     &:hover{
-      box-shadow: 0px 1px 26px -10px #000000cf;
+      box-shadow: 0px 1px 20px -10px $light-black;
+      transform: translateY(-2px);
     }
     .item-amount{
-      color: orangered !important;
+      color: $orangered !important;
+      padding-bottom: Rem(10);
     }
   }
 }
