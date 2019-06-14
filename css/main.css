@@ -7794,12 +7794,33 @@ footer {
     .copy-right .dropdown-item a:hover {
       color: #ff6700; }
 
-/** product-review */
 .section-bg {
   background: #f5f5f5; }
 
-.product-review .review-header {
-  margin: 68px auto 40px; }
+.section-header {
+  padding: 68px 0 40px; }
+
+h2 {
+  position: relative;
+  color: #616161; }
+  h2:before {
+    content: "";
+    right: 25px;
+    position: absolute;
+    top: 14px;
+    width: 344px;
+    height: 1px;
+    background-color: #e0e0e0; }
+  h2:after {
+    left: 25px;
+    content: "";
+    position: absolute;
+    top: 14px;
+    width: 344px;
+    height: 1px;
+    background-color: #e0e0e0; }
+
+/** product-review */
 .product-review .camera-review {
   transition: .3s ease-out; }
   .product-review .camera-review:hover {
@@ -7807,7 +7828,7 @@ footer {
 .product-review .img-detail {
   padding: 22px 160px 22px 22px; }
   .product-review .img-detail h4 {
-    font-size: 18px; }
+    font-size: 17px; }
   .product-review .img-detail a {
     text-decoration: none;
     color: #616161; }
@@ -7822,24 +7843,26 @@ footer {
   transition: .3s ease-out; }
   .product-review .sound-review:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18); }
-.product-review h2 {
-  position: relative;
-  color: #616161; }
-  .product-review h2:before {
-    content: "";
-    right: 25px;
+
+.video {
+  position: relative; }
+  .video .play-button {
     position: absolute;
-    top: 14px;
-    width: 344px;
-    height: 1px;
-    background-color: #e0e0e0; }
-  .product-review h2:after {
-    left: 25px;
-    content: "";
-    position: absolute;
-    top: 14px;
-    width: 344px;
-    height: 1px;
-    background-color: #e0e0e0; }
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transition: .3s ease-out;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff; }
+    .video .play-button i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  .video:hover .play-button {
+    background: rgba(255, 255, 255, 0.5); }
 
 /*# sourceMappingURL=main.css.map */

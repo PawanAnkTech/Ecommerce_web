@@ -30,7 +30,7 @@
         color: $link-color;
         transition: .3s ease-out;
         &:hover{
-          color: $link-hover;
+          color: $white-color;
           text-decoration: none;
         }
       }
@@ -51,18 +51,18 @@
         }
       }
       &:hover{
-        background: $link-hover;
+        background: $white-color;
         .store-type{
           color: $primary-color;
           &:hover{
-            color: $dropdown-link-color;
+            color: $orange;
           }
         }
         .dropdown-menu{
           display: block;
           a{
             &:hover{
-              color: $dropdown-link-color;
+              color: $orange;
               background: $dropdown-link-bg;
             }
           }
@@ -93,7 +93,7 @@
         color: $link-color;
         transition: .3s ease-out;
         &:hover{
-          color: $link-hover;
+          color: $white-color;
           text-decoration: none;
         }
       }
@@ -110,11 +110,11 @@
         right: 0 !important;
       }
       &:hover{
-        background: $link-hover;
+        background: $white-color;
         a{
           color: $primary-color;
           &:hover{
-            color: $dropdown-link-color;
+            color: $orange;
           }
         }
         &:hover{
@@ -158,7 +158,7 @@
       }
       .list-inline-item{
         .dropdown-menu{
-          border-top: 1px solid $border !important;
+          border-top: 1px solid $Very-light-gray !important;
           border-radius: 0;
           width: 100%;
         }
@@ -174,7 +174,7 @@
         text-decoration: none;
         display: block;
         &:hover {
-          color: $dropdown-link-color;
+          color: $orange;
         }
       }
       .item{
@@ -187,7 +187,7 @@
         text-decoration: none;
       }
       p{
-        color: $dropdown-link-color;
+        color: $orange;
         font-weight: 400;
       }
     }
@@ -220,7 +220,7 @@ footer{
     transition: .3s ease-out;
     color: $link-color;
     &:hover{
-      color: $link-hover;
+      color: $white-color;
       text-decoration: none;
     }
   }
@@ -232,15 +232,15 @@ footer{
   }
 }
 .chat-link{
-  color: $link-hover;
-  border: 1px solid $border;
+  color: $white-color;
+  border: 1px solid $Very-light-gray;
   font-size: 14px;
   margin-top: 14px;
   line-height: 38px;
   transition: .3s ease-out;
   &:hover{
     text-decoration: none;
-    background: $border;
+    background: $Very-light-gray;
     color: $top-nav-bg-color
   }
 }
@@ -271,7 +271,7 @@ footer{
   }
   a[aria-expanded="true"]{
     background: #fff;
-    color: $footer-link;
+    color: $Dark-gray;
     border-top: 1px solid;
   }
   .dropdown-item{
@@ -279,22 +279,45 @@ footer{
       background-color: transparent;
     }
     a{
-      color: $footer-link;
+      color: $Dark-gray;
       &:hover{
-        color: $dropdown-link-color;
+        color: $orange;
       }
     }
   }
 }
 
-/** product-review */
 .section-bg{
   background: $dropdown-link-bg;
 }
-.product-review{
-  .review-header{
-    margin: 68px auto 40px;
+.section-header{
+  padding: 68px 0 40px;
+}
+h2{
+  position: relative;
+  color: $review-text;
+  &:before{
+    content: "";
+    right: 25px;
+    position: absolute;
+    top: 14px;
+    width: 344px;
+    height: 1px;
+    background-color: $secondary-color;
   }
+  &:after{
+    left: 25px;
+    content: "";
+    position: absolute;
+    top: 14px;
+    width: 344px;
+    height: 1px;
+    background-color: $secondary-color;
+  }
+}
+
+/** product-review */
+.product-review{
   .camera-review{
     transition: .3s ease-out;
     &:hover{
@@ -304,7 +327,7 @@ footer{
   .img-detail{
     padding: 22px 160px 22px 22px;
     h4{
-      font-size: 18px;
+      font-size: 17px;
     }
     a{
       text-decoration: none;
@@ -320,7 +343,7 @@ footer{
     }
     span{
       margin-left: 32px;
-      color: $dropdown-link-color;
+      color: $orange;
     }
   }
   .sound-review{
@@ -329,26 +352,32 @@ footer{
       box-shadow: 0 8px 16px rgba(0,0,0,.18);
     }
   }
-  h2{
-    position: relative;
-    color: $review-text;
-    &:before{
-      content: "";
-      right: 25px;
+}
+
+
+.video{
+  position: relative;
+  .play-button{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transition: .3s ease-out;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, .1);
+    color: #fff;
+    i{
       position: absolute;
-      top: 14px;
-      width: 344px;
-      height: 1px;
-      background-color: $secondary-color;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
-    &:after{
-      left: 25px;
-      content: "";
-      position: absolute;
-      top: 14px;
-      width: 344px;
-      height: 1px;
-      background-color: $secondary-color;
+  }
+  &:hover{
+    .play-button{
+      background: rgba(255, 255, 255, .5);
     }
   }
 }
