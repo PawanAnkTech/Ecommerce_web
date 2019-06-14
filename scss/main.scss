@@ -270,7 +270,7 @@ footer{
     border-radius: 0;
   }
   a[aria-expanded="true"]{
-    background: #fff;
+    background: $white-color;
     color: $Dark-gray;
     border-top: 1px solid;
   }
@@ -356,7 +356,7 @@ h2{
 
 /** videos */
 .video-section{
-  margin-bottom: 48px;
+  margin-bottom: 100px;
 }
 .video{
   position: relative;
@@ -370,7 +370,7 @@ h2{
     transition: .3s ease-out;
     transform: translate(-50%, -50%);
     background: rgba(255, 255, 255, .1);
-    color: #fff;
+    color: $white-color;
     i{
       position: absolute;
       top: 50%;
@@ -393,7 +393,7 @@ h2{
   }
   a{
     display: block;
-    color: #b0b0b0;
+    color: $link-color;
     font-size: 14px;
     font-weight: 600;
     line-height: 18px;
@@ -403,7 +403,7 @@ h2{
     text-decoration: none;
     strong{
       font-weight: 600;
-      color: #424242;
+      color: $primary-color;
     }
     i{
       font-size: 33px;
@@ -413,7 +413,7 @@ h2{
       line-height: 38px;
     }
     &:hover{
-      color: #424242;
+      color: $primary-color;
     }
   }
 }
@@ -441,12 +441,12 @@ h2{
     height: 40px;
     line-height: 40px;
     font-size: 14px;
-    color: #b0b0b0;
+    color: $link-color;
     padding: 2px 40px 2px 17px;
     margin: 0;
-    border: 1px solid #e0e0e0;
+    border: 1px solid $secondary-color;
     outline: 0;
-    background-color: #fff;
+    background-color: $white-color;
   }
   .button{
     position: absolute;
@@ -459,7 +459,7 @@ h2{
     outline: 0;
     i{
       font-size: 11px;
-      color: #b0b0b0;
+      color: $link-color;
     }
   }
   .social-links{
@@ -467,9 +467,9 @@ h2{
     display: inline-block;
     i{
       transition: .3s ease-out;
-      color: #b0b0b0;
+      color: $link-color;
       &:hover{
-        color: #616161;
+        color: $review-text;
       }
     }
   }
