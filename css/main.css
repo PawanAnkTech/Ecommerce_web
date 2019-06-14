@@ -7844,6 +7844,10 @@ h2 {
   .product-review .sound-review:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18); }
 
+/** videos */
+.video-section {
+  margin-bottom: 48px; }
+
 .video {
   position: relative; }
   .video .play-button {
@@ -7864,5 +7868,32 @@ h2 {
       transform: translate(-50%, -50%); }
   .video:hover .play-button {
     background: rgba(255, 255, 255, 0.5); }
+
+/** policy */
+.policy {
+  padding: 20px 0 24px; }
+  .policy .policy-wrapper {
+    max-width: 220px; }
+  .policy a {
+    display: block;
+    color: #b0b0b0;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    white-space: nowrap;
+    transition: .3s ease-out;
+    padding-left: 55px;
+    text-decoration: none; }
+    .policy a strong {
+      font-weight: 600;
+      color: #424242; }
+    .policy a i {
+      font-size: 33px;
+      position: absolute;
+      left: 20px;
+      top: 0px;
+      line-height: 38px; }
+    .policy a:hover {
+      color: #424242; }
 
 /*# sourceMappingURL=main.css.map */

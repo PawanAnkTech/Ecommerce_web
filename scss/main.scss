@@ -354,7 +354,10 @@ h2{
   }
 }
 
-
+/** videos */
+.video-section{
+  margin-bottom: 48px;
+}
 .video{
   position: relative;
   .play-button{
@@ -378,6 +381,39 @@ h2{
   &:hover{
     .play-button{
       background: rgba(255, 255, 255, .5);
+    }
+  }
+}
+
+/** policy */
+.policy{
+  padding: 20px 0 24px;
+  .policy-wrapper{
+    max-width: 220px;
+  }
+  a{
+    display: block;
+    color: #b0b0b0;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    white-space: nowrap;
+    transition: .3s ease-out;
+    padding-left: 55px;
+    text-decoration: none;
+    strong{
+      font-weight: 600;
+      color: #424242;
+    }
+    i{
+      font-size: 33px;
+      position: absolute;
+      left: 20px;
+      top: 0px;
+      line-height: 38px;
+    }
+    &:hover{
+      color: #424242;
     }
   }
 }
