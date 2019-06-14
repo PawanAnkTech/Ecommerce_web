@@ -7896,4 +7896,53 @@ h2 {
     .policy a:hover {
       color: #424242; }
 
+/** coustumer-relation */
+.relation {
+  padding: 40px 0; }
+
+h3 {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 18px; }
+
+p {
+  margin: 0;
+  font-size: 12px; }
+
+.coustumer-reation {
+  margin-left: 40px;
+  position: relative; }
+  .coustumer-reation input[type="Email"] {
+    display: block;
+    width: 209px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #b0b0b0;
+    padding: 2px 40px 2px 17px;
+    margin: 0;
+    border: 1px solid #e0e0e0;
+    outline: 0;
+    background-color: #fff; }
+  .coustumer-reation .button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding: 0 10px;
+    background-color: transparent;
+    border: none;
+    outline: 0; }
+    .coustumer-reation .button i {
+      font-size: 11px;
+      color: #b0b0b0; }
+  .coustumer-reation .social-links {
+    margin: 0 10px;
+    display: inline-block; }
+    .coustumer-reation .social-links i {
+      transition: .3s ease-out;
+      color: #b0b0b0; }
+      .coustumer-reation .social-links i:hover {
+        color: #616161; }
+
 /*# sourceMappingURL=main.css.map */
