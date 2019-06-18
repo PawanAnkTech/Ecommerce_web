@@ -7945,7 +7945,8 @@ p {
       .coustumer-reation .social-links i:hover {
         color: #616161; }
 
-/*=========================================================== support page */
+/*=========================================================== support html page */
+/*=========================================================== breadcrumb */
 .home-link {
   color: #b0b0b0;
   font-size: 12px;
@@ -7966,6 +7967,7 @@ p {
   line-height: 24px;
   color: #424242 !important; }
 
+/*======================================================= Support-head */
 .Support-head {
   margin-bottom: 60px;
   height: 450px;
@@ -7978,6 +7980,7 @@ p {
     font-weight: 600;
     margin-bottom: 21px; }
 
+/*============================================================ support-category */
 .product-list {
   margin-bottom: 70px;
   padding: 30px 0 40px;
@@ -7993,6 +7996,7 @@ p {
   border-left: 1px solid #e0e0e0;
   margin-left: -1px; }
 
+/*============================================================ faqs */
 .support-type {
   margin-bottom: 42px; }
   .support-type .supp-category {
@@ -8010,6 +8014,7 @@ p {
       color: #ff6700;
       text-decoration: none; }
 
+/*========================================================== service-types */
 .service-types {
   padding-top: 43px;
   margin-bottom: 80px; }

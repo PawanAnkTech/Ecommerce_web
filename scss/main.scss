@@ -476,7 +476,8 @@ p{
 }
 
 
-/*=========================================================== support page */
+/*=========================================================== support html page */
+/*=========================================================== breadcrumb */
 .home-link{
   color: $link-color;
   font-size: 12px;
@@ -499,9 +500,11 @@ p{
   line-height: 24px;
   color: $primary-color !important;
 }
+
+/*======================================================= Support-head */
 .Support-head{
-      margin-bottom: 60px;
-          height: 450px;
+  margin-bottom: 60px;
+  height: 450px;
   background: url("../img/service-mipad-img01.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -512,6 +515,8 @@ p{
     margin-bottom: 21px;
   }
 }
+
+/*============================================================ support-category */
 .product-list{
   margin-bottom: 70px;
   padding: 30px 0 40px;
@@ -530,6 +535,8 @@ p{
   margin-left: -1px;
 }
 
+
+/*============================================================ faqs */
 .support-type{
   margin-bottom: 42px;
   .supp-category{
@@ -551,7 +558,7 @@ p{
   }
 }
 
-
+/*========================================================== service-types */
 .service-types{
   padding-top: 43px;
   margin-bottom: 80px;
