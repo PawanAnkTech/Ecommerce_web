@@ -3,12 +3,12 @@
 @import "mixins/mixin";
 
 
-/** header */
-/** top-nav */
+/*================================================================= header */
+/*================================================================= top-nav */
 .top-nav{
   background-color: $top-nav-bg-color;
   text-transform: uppercase;
-  /** left-nav */
+  /*================================================================= left-nav */
   .left-nav{
     float: left;
     li{
@@ -71,7 +71,7 @@
     }
   }
 
-  /* right-nav */
+  /*=============================================================== right-nav */
   .right-nav{
     float: right;
     li{
@@ -127,7 +127,7 @@
   }
 }
 
-/** main-nav */
+/*====================================================================== main-nav */
 .main-nav{
   height: 88px;
   width: 100%;
@@ -149,7 +149,7 @@
     }
   }
 
-  /** product categories */
+  /*======================================================== product categories */
   .category{
     ul{
       li{
@@ -194,7 +194,7 @@
   }
 }
 
-/** search-box */
+/*=================================================================== search-box */
 .search-box{
   input[type="text"]{
     border: none;
@@ -205,7 +205,7 @@
 }
 
 
-/** footer */
+/*====================================================================== footer */
 footer{
   background-color: $top-nav-bg-color;
   color: $link-color;
@@ -246,7 +246,7 @@ footer{
 }
 
 
-/** copy-right */
+/*================================================================= copy-right */
 .copy-right{
   border-top: 1px solid $primary-color;
   line-height: 70px;
@@ -316,7 +316,7 @@ h2{
   }
 }
 
-/** product-review */
+/*============================================================= product-review */
 .product-review{
   .camera-review{
     transition: .3s ease-out;
@@ -354,7 +354,7 @@ h2{
   }
 }
 
-/** videos */
+/*==================================================================== videos */
 .video-section{
   margin-bottom: 100px;
 }
@@ -385,7 +385,7 @@ h2{
   }
 }
 
-/** policy */
+/*===================================================================== policy */
 .policy{
   padding: 20px 0 24px;
   .policy-wrapper{
@@ -419,19 +419,19 @@ h2{
 }
 
 
-/** coustumer-relation */
+/*========================================================= coustumer-relation */
 .relation{
   padding: 40px 0;
 }
-  h3{
-    margin: 0;
-    text-transform: uppercase;
-    font-size: 18px;
-  }
-  p{
-    margin: 0;
-    font-size: 12px;
-  }
+h3{
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+p{
+  margin: 0;
+  font-size: 12px;
+}
 .coustumer-reation{
   margin-left: 40px;
   position: relative;
@@ -473,4 +473,102 @@ h2{
       }
     }
   }
+}
+
+
+/*=========================================================== support page */
+.home-link{
+  color: $link-color;
+  font-size: 12px;
+  transition: .2s ease-out;
+  &:hover{
+    color: $orange;
+    text-decoration: none;
+  }
+}
+.breadcrumb{
+  background: $dropdown-link-bg;
+}
+.breadcrumb-item + .breadcrumb-item::before{
+  content: ">";
+  margin: 0 17px 0 14px;
+}
+
+.active-page{
+  font-size: 12px;
+  line-height: 24px;
+  color: $primary-color !important;
+}
+.Support-head{
+      margin-bottom: 60px;
+          height: 450px;
+  background: url("../img/service-mipad-img01.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  h3{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 21px;
+  }
+}
+.product-list{
+  margin-bottom: 70px;
+  padding: 30px 0 40px;
+  overflow: hidden;
+  a{
+    color: $Dark-gray;
+    transition: .2s ease-out;
+    &:hover{
+      color: $orange;
+      text-decoration: none;
+    }
+  }
+}
+.product-item{
+  border-left: 1px solid $secondary-color;
+  margin-left: -1px;
+}
+
+.support-type{
+  margin-bottom: 42px;
+  .supp-category{
+    border-top-color: transparent;
+  }
+  a{
+    color: $Dark-gray;
+    text-indent: 30px;
+    line-height: 100px;
+    transition: .2s ease-out;
+    border: 1px solid $Very-light-gray;
+    border-left-color: $white-color;
+    border-bottom-color: $white-color;
+    &:hover{
+      border: 1px solid $orange;
+      color: $orange;
+      text-decoration: none;
+    }
+  }
+}
+
+
+.service-types{
+  padding-top: 43px;
+  margin-bottom: 80px;
+  a{
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}
+.card-body{
+  height: 115px;
+}
+.card-text{
+  color: $link-color;
+}
+.card-title{
+  color: $Dark-gray;
+  font-size: 20px;
+  text-transform: uppercase;
 }

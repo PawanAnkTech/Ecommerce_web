@@ -7590,13 +7590,13 @@ a.text-dark:hover, a.text-dark:focus {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
-/** header */
-/** top-nav */
+/*================================================================= header */
+/*================================================================= top-nav */
 .top-nav {
   background-color: #212121;
   text-transform: uppercase;
-  /** left-nav */
-  /* right-nav */ }
+  /*================================================================= left-nav */
+  /*=============================================================== right-nav */ }
   .top-nav .left-nav {
     float: left; }
     .top-nav .left-nav li {
@@ -7680,11 +7680,11 @@ a.text-dark:hover, a.text-dark:focus {
       .top-nav .right-nav .dropdown:hover:hover .dropdown-menu {
         display: block; }
 
-/** main-nav */
+/*====================================================================== main-nav */
 .main-nav {
   height: 88px;
   width: 100%;
-  /** product categories */ }
+  /*======================================================== product categories */ }
   .main-nav .mi-logo {
     width: 56px;
     height: 56px;
@@ -7724,14 +7724,14 @@ a.text-dark:hover, a.text-dark:focus {
     color: #ff6700;
     font-weight: 400; }
 
-/** search-box */
+/*=================================================================== search-box */
 .search-box input[type="text"] {
   border: none;
   border-bottom: 1px solid;
   font-size: 14px;
   outline: none; }
 
-/** footer */
+/*====================================================================== footer */
 footer {
   background-color: #212121;
   color: #b0b0b0; }
@@ -7763,7 +7763,7 @@ footer {
     background: #eee;
     color: #212121; }
 
-/** copy-right */
+/*================================================================= copy-right */
 .copy-right {
   border-top: 1px solid #424242;
   line-height: 70px; }
@@ -7820,7 +7820,7 @@ h2 {
     height: 1px;
     background-color: #e0e0e0; }
 
-/** product-review */
+/*============================================================= product-review */
 .product-review .camera-review {
   transition: .3s ease-out; }
   .product-review .camera-review:hover {
@@ -7844,7 +7844,7 @@ h2 {
   .product-review .sound-review:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18); }
 
-/** videos */
+/*==================================================================== videos */
 .video-section {
   margin-bottom: 100px; }
 
@@ -7869,7 +7869,7 @@ h2 {
   .video:hover .play-button {
     background: rgba(255, 255, 255, 0.5); }
 
-/** policy */
+/*===================================================================== policy */
 .policy {
   padding: 20px 0 24px; }
   .policy .policy-wrapper {
@@ -7896,7 +7896,7 @@ h2 {
     .policy a:hover {
       color: #424242; }
 
-/** coustumer-relation */
+/*========================================================= coustumer-relation */
 .relation {
   padding: 40px 0; }
 
@@ -7944,5 +7944,87 @@ p {
       color: #b0b0b0; }
       .coustumer-reation .social-links i:hover {
         color: #616161; }
+
+/*=========================================================== support page */
+.home-link {
+  color: #b0b0b0;
+  font-size: 12px;
+  transition: .2s ease-out; }
+  .home-link:hover {
+    color: #ff6700;
+    text-decoration: none; }
+
+.breadcrumb {
+  background: #f5f5f5; }
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+  margin: 0 17px 0 14px; }
+
+.active-page {
+  font-size: 12px;
+  line-height: 24px;
+  color: #424242 !important; }
+
+.Support-head {
+  margin-bottom: 60px;
+  height: 450px;
+  background: url("../img/service-mipad-img01.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  .Support-head h3 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 21px; }
+
+.product-list {
+  margin-bottom: 70px;
+  padding: 30px 0 40px;
+  overflow: hidden; }
+  .product-list a {
+    color: #757575;
+    transition: .2s ease-out; }
+    .product-list a:hover {
+      color: #ff6700;
+      text-decoration: none; }
+
+.product-item {
+  border-left: 1px solid #e0e0e0;
+  margin-left: -1px; }
+
+.support-type {
+  margin-bottom: 42px; }
+  .support-type .supp-category {
+    border-top-color: transparent; }
+  .support-type a {
+    color: #757575;
+    text-indent: 30px;
+    line-height: 100px;
+    transition: .2s ease-out;
+    border: 1px solid #eee;
+    border-left-color: #fff;
+    border-bottom-color: #fff; }
+    .support-type a:hover {
+      border: 1px solid #ff6700;
+      color: #ff6700;
+      text-decoration: none; }
+
+.service-types {
+  padding-top: 43px;
+  margin-bottom: 80px; }
+  .service-types a:hover {
+    text-decoration: none; }
+
+.card-body {
+  height: 115px; }
+
+.card-text {
+  color: #b0b0b0; }
+
+.card-title {
+  color: #757575;
+  font-size: 20px;
+  text-transform: uppercase; }
 
 /*# sourceMappingURL=main.css.map */
