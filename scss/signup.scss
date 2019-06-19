@@ -1,0 +1,188 @@
+@import "variable/variable";
+
+//************************************************body
+body{
+  background: #f9f9f9;
+  color: #666;
+}
+//*********************************************** white box
+.box_wrapper{
+  width: 854px;
+  padding:0 30px 30px;
+  background: $white-color;
+  margin: 0 auto;
+}
+
+//***********************************************input form
+.input{
+  width: 332px;
+  padding: 30px 0;
+  margin: 0 auto;
+  font-size: 14px;
+}
+h4{
+  color: #333;
+  line-height: 1.5;
+  font-size: 30px;
+}
+.privacy_block {
+  text-align: center;
+  padding-top: 40px;
+}
+select {
+  -moz-appearance:none; /* Firefox */
+  -webkit-appearance:none; /* Safari and Chrome */
+  appearance:none;
+}
+.btn-1{
+  background-color: $orange;
+  margin-top: 15px;
+  font-size: 14px;
+  box-shadow: none !important;
+  border: 1px solid rgba(186,186,186,0.3);
+  &:hover{
+    background: #ff936a;
+  }
+}
+.btn-2{
+  border: 1px solid #ddd;
+  font-size: 14px;
+  box-shadow: none !important;
+  color: #7c7c7c;
+}
+
+/*================================================================ checkbox */
+/* The checkbox */
+.checkbox {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 21px;
+  width: 21px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+
+
+/* When the checkbox is checked, add a blue background */
+.checkbox input:checked ~ .checkmark {
+  background-color: $orange;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox .checkmark:after {
+  left: 7px;
+  top: 4px;
+  width: 5px;
+  height: 9px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/*================================================================ checkbox end */
+
+.msg{
+  a{
+    color: #333;
+    font-weight: 600;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}
+
+input#exampleInputEmail1,
+select#exampleFormControlSelect1 {
+  box-shadow: none;
+  font-size: 14px;
+  height: 40px;
+  &:focus{
+    border-color: #ccc;
+  }
+}
+.show-more-lang {
+  padding: 0 5px;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+//**************************************************footer
+footer{
+  font-size: 14px;
+  a{
+    padding: 0 10px;
+    color: #757575;
+    transition: .2s ease-out;
+    &:hover{
+      color: #333;
+      text-decoration: none;
+    }
+  }
+  .current-active{
+    color: #333;
+  }
+  p{
+    color: #9d9d9d;
+  }
+}
+.modal-body{
+  a{
+    padding: 5px 0;
+    color: #46639c;
+    display: block;
+    line-height: 20px;
+    text-align: left;
+    &:hover{
+      color: #46639c;
+    }
+  }
+}
+.modal-content{
+  border: 6px solid #9d9d9d;
+}
+.modal-header{
+  color: #1e1e1e;
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 0;
+}
