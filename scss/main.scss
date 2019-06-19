@@ -17,13 +17,8 @@
       line-height: 40px;
       position: relative;
       &:not(:first-child):before{
-        content: '';
-        position: absolute;
-        left: -20px;
-        top: 50%;
+        @include absoluteTL(50%, -20px, 1px, 12px);
         margin-top: -6px;
-        width: 1px;
-        height: 12px;
         background-color: $primary-color;
       }
       a{
@@ -80,13 +75,8 @@
       line-height: 40px;
       position: relative;
       &:not(:last-child):after{
-        content: '';
-        position: absolute;
-        right: -20px;
-        top: 50%;
+        @include absoluteTR(50%, -20px, 1px, 12px);
         margin-top: -6px;
-        width: 1px;
-        height: 12px;
         background-color: $primary-color;
       }
       a{
@@ -129,11 +119,9 @@
 
 /*====================================================================== main-nav */
 .main-nav{
-  height: 88px;
-  width: 100%;
+  @include div(100%, 88px);
   .mi-logo{
-    width: 56px;
-    height: 56px;
+    @include div(56px, 56px);
     margin: 16px 0 0;
     float: left;
     overflow: hidden;

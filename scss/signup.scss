@@ -1,9 +1,10 @@
 @import "variable/variable";
+@import "mixins/mixin";
 
 //************************************************body
 body{
-  background: #f9f9f9;
-  color: #666;
+  background: $gray-bg-clr;
+  color: $black-txt;
 }
 //*********************************************** white box
 .box_wrapper{
@@ -21,7 +22,7 @@ body{
   font-size: 14px;
 }
 h4{
-  color: #333;
+  color: $text-color;
   line-height: 1.5;
   font-size: 30px;
 }
@@ -41,14 +42,14 @@ select {
   box-shadow: none !important;
   border: 1px solid rgba(186,186,186,0.3);
   &:hover{
-    background: #ff936a;
+    background: $light-orange;
   }
 }
 .btn-2{
-  border: 1px solid #ddd;
+  border: 1px solid $gray-border;
   font-size: 14px;
   box-shadow: none !important;
-  color: #7c7c7c;
+  color: $btn-txt;
 }
 
 /*================================================================ checkbox */
@@ -70,20 +71,14 @@ select {
   position: absolute;
   opacity: 0;
   cursor: pointer;
-  height: 0;
-  width: 0;
+  @include div(0, 0);
 }
 
 /* Create a custom checkbox */
 .checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 21px;
-  width: 21px;
-  border-radius: 50%;
-  border: 1px solid #ddd;
-  background-color: #fff;
+  @include absolute(0, 0, 21px, 21px, 50%);
+  border: 1px solid $gray-border;
+  background-color: $white-color;
 }
 
 
@@ -106,10 +101,7 @@ select {
 
 /* Style the checkmark/indicator */
 .checkbox .checkmark:after {
-  left: 7px;
-  top: 4px;
-  width: 5px;
-  height: 9px;
+  @include posTL(4px, 7px, 5px, 9px);
   border: solid white;
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
@@ -120,7 +112,7 @@ select {
 
 .msg{
   a{
-    color: #333;
+    color: $text-color;
     font-weight: 600;
     &:hover{
       text-decoration: none;
@@ -134,13 +126,13 @@ select#exampleFormControlSelect1 {
   font-size: 14px;
   height: 40px;
   &:focus{
-    border-color: #ccc;
+    border-color: $input-bd-clr;
   }
 }
 .show-more-lang {
   padding: 0 5px;
-  border: 1px solid #ccc;
-  background: #fff;
+  border: 1px solid $input-bd-clr;
+  background: $white-color;
   border-radius: 3px;
   cursor: pointer;
   margin-right: 10px;
@@ -151,37 +143,37 @@ footer{
   font-size: 14px;
   a{
     padding: 0 10px;
-    color: #757575;
+    color: $Dark-gray;
     transition: .2s ease-out;
     &:hover{
-      color: #333;
+      color: $text-color;
       text-decoration: none;
     }
   }
   .current-active{
-    color: #333;
+    color: $text-color;
   }
   p{
-    color: #9d9d9d;
+    color: $modeal-border;
   }
 }
 .modal-body{
   a{
     padding: 5px 0;
-    color: #46639c;
+    color: $modal-link-blue;
     display: block;
     line-height: 20px;
     text-align: left;
     &:hover{
-      color: #46639c;
+      color: $modal-link-blue;
     }
   }
 }
 .modal-content{
-  border: 6px solid #9d9d9d;
+  border: 6px solid $modeal-border;
 }
 .modal-header{
-  color: #1e1e1e;
+  color: $very-dark-gray;
   font-size: 14px;
   font-weight: bold;
   padding-top: 0;

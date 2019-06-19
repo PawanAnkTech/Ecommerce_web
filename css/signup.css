@@ -63,17 +63,17 @@ select {
   position: absolute;
   opacity: 0;
   cursor: pointer;
-  height: 0;
-  width: 0; }
+  width: 0;
+  height: 0; }
 
 /* Create a custom checkbox */
 .checkmark {
-  position: absolute;
   top: 0;
   left: 0;
-  height: 21px;
   width: 21px;
+  height: 21px;
   border-radius: 50%;
+  position: absolute;
   border: 1px solid #ddd;
   background-color: #fff; }
 
@@ -93,8 +93,8 @@ select {
 
 /* Style the checkmark/indicator */
 .checkbox .checkmark:after {
-  left: 7px;
   top: 4px;
+  left: 7px;
   width: 5px;
   height: 9px;
   border: solid white;

@@ -1,0 +1,34 @@
+@mixin absoluteTL($top, $left, $width, $height, $position: absolute, $content: '') {
+  top: $top;
+  left: $left;
+  width: $width;
+  height: $height;
+  position: $position;
+  content: $content;
+}
+@mixin absolute($top, $left, $width, $height, $border-radius, $position: absolute) {
+  top: $top;
+  left: $left;
+  width: $width;
+  height: $height;
+  border-radius: $border-radius;
+  position: $position;
+}
+@mixin absoluteTR($top, $right, $width, $height, $position: absolute, $content: '') {
+  top: $top;
+  right: $right;
+  width: $width;
+  height: $height;
+  position: $position;
+  content: $content;
+}
+@mixin div($width, $height) {
+  width: $width;
+  height: $height;
+}
+@mixin posTL($top, $left, $width, $height) {
+  top: $top;
+  left: $left;
+  width: $width;
+  height: $height;
+}
