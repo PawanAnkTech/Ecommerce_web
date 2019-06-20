@@ -567,3 +567,173 @@ p{
   font-size: 20px;
   text-transform: uppercase;
 }
+
+
+//*************************************************** bulk buy html page***
+//*************************************************** bulk banner
+.banner_wrapper{
+  background: url("../img/banner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @include div(100%, 460px);
+}
+.context{
+  padding: 128px 0 0 136px;
+  a{
+    text-decoration: none;
+    display: inline-block;
+    background: $orange;
+    padding: 17px 40px;
+    font-size: 14px;
+    border-radius: 5px;
+  }
+  h3{
+    font-size: 28px;
+    line-height: 1.5;
+  }
+  h4{
+    padding: 30px 0;
+    color: $muted-color;
+    font-size: 18px;
+  }
+}
+
+//******************************************************* bulk item
+.box-item{
+  @include div(210px, 300px);
+  background-color: $white-color;
+  margin-bottom: 14px;
+  position: relative;
+  float: left;
+  margin-left: 14px;
+  transition: .2s ease-out;
+  &:hover{
+    box-shadow: 0 15px 30px rgba(0,0,0,.1);
+    top: -2px;
+  }
+  img{
+    margin: 35px 0;
+    @include div(150px, 150px);
+  }
+  p{
+    color: $Dark-gray;
+    line-height: 30px;
+    margin-top: 10px;
+  }
+  &:hover{
+    .order_link{
+      a{
+        transform: translateY(0px);
+        text-decoration: none;
+      }
+    }
+  }
+}
+.order_link{
+  overflow: hidden;
+  a{
+    color: $white-color;
+    background: $orange;
+    display: block;
+    @include div(100%, 40px);
+    transform: translateY(40px);
+    line-height: 40px;
+    transition: .2s ease-out;
+    font-size: 14px;
+  }
+}
+.bulk_item_one{
+  span{
+    @include absoluteTL(-5px, 0, 86px, 26px);
+    font-size: 14px;
+    line-height: 26px;
+    color: $white-color;
+    text-align: center;
+    background: $green-color;
+  }
+}
+.bulk_item_two{
+  span{
+    @include absoluteTL(-5px, 0, 86px, 26px);
+    font-size: 14px;
+    line-height: 26px;
+    color: $white-color;
+    text-align: center;
+    background: $orange;
+  }
+}
+
+//************************* order-procedure *****************************/
+.order-process{
+  h1{
+    color: $top-nav-bg-color;
+    margin-bottom: 40px;
+    padding-top: 60px;
+    font-size: 32px;
+  }
+}
+.box{
+  padding: 0 0 60px;
+}
+.step{
+  @include div(255px, 180px);
+  border-radius: 8px;
+  position: relative;
+  p{
+    padding: 0 20px;
+  }
+  span{
+    display: block;
+    @include absoluteTL(-18px, 50%, 88px, 36px);
+    font-size: 50px;
+    font-weight: bold;
+    background: $white-color;
+    margin-left: -44px;
+    line-height: 36px;
+  }
+}
+.step-one{
+  border: 1px solid $orange;
+  color: $orange;
+}
+.step-two{
+  border: 1px solid $green-color;
+  color: $green-color;
+}
+.step-three{
+  border: 1px solid $blue;
+  color: $blue;
+}
+.step-four{
+  border: 1px solid $purple;
+  color: $purple;
+}
+
+//***************************** bulk benifits ******************************/
+.benifits{
+  margin-bottom: 100px;
+}
+.bnf-header{
+  background: $orange;
+  color: $white-color;
+  h1{
+    height: 80px;
+    line-height: 80px;
+    margin: 0;
+  }
+}
+.bnf-discrition{
+  padding: 40px 0 80px 60px;
+  color: $Dark-gray;
+  p{
+    font-size: 16px;
+  }
+  small:not(:last-child){
+    margin-bottom: 40px;
+    display: block;
+  }
+  span{
+    color: $orange;
+  }
+}

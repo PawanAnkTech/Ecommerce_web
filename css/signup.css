@@ -97,6 +97,7 @@ select {
   left: 7px;
   width: 5px;
   height: 9px;
+  position: relative;
   border: solid white;
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
