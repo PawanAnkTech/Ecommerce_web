@@ -6,12 +6,11 @@
   position: $position;
   content: $content;
 }
-@mixin absolute($top, $left, $width, $height, $border-radius, $position: absolute) {
-  top: $top;
+@mixin absoluteBL($bottom, $left, $width, $height, $position: absolute) {
+  bottom: $bottom;
   left: $left;
   width: $width;
   height: $height;
-  border-radius: $border-radius;
   position: $position;
 }
 @mixin absoluteTR($top, $right, $width, $height, $position: absolute, $content: '') {
@@ -26,7 +25,15 @@
   width: $width;
   height: $height;
 }
-@mixin posTL($top, $left, $width, $height, $position: relative) {
+@mixin absolute($top, $left, $width, $height, $border-radius, $position: absolute) {
+  top: $top;
+  left: $left;
+  width: $width;
+  height: $height;
+  border-radius: $border-radius;
+  position: $position;
+}
+@mixin posTL($top, $left, $width, $height, $position:relative) {
   top: $top;
   left: $left;
   width: $width;

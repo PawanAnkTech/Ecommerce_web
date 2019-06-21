@@ -8188,4 +8188,334 @@ p {
   .bnf-discrition span {
     color: #ff6700; }
 
+.Warranty {
+  background: url("../img/top-bg.jpg") center top no-repeat;
+  position: relative;
+  overflow: hidden; }
+  .Warranty h1 {
+    padding-top: 125px;
+    font-family: ProximaNova-Bold;
+    font-weight: 900;
+    text-shadow: 0 3px 8px rgba(179, 56, 23, 0.4);
+    font-size: 52px; }
+
+.Warranty-info {
+  max-width: 960px;
+  margin: 48px auto;
+  border-radius: 12px;
+  padding-top: 24px;
+  box-shadow: 1px 3px 12px rgba(32, 33, 39, 0.08);
+  background: #fff; }
+  .Warranty-info h3 {
+    margin: 37px 0;
+    line-height: 1.5; }
+
+.learn-more {
+  border-top: 1px solid rgba(32, 33, 39, 0.08);
+  box-shadow: 1px 0 0 rgba(32, 33, 39, 0.08);
+  width: 100%;
+  height: 67px;
+  line-height: 67px; }
+  .learn-more a {
+    color: #ff6700; }
+    .learn-more a:hover {
+      text-decoration: none; }
+
+.info-list {
+  margin-bottom: 87px;
+  color: #757575;
+  padding: 0 73px; }
+
+.list-header {
+  height: 120px;
+  border-bottom: 1px solid #bbb; }
+  .list-header .price {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 120px;
+    color: #7aaa4b; }
+    .list-header .price .small {
+      font-size: 18px; }
+
+.detail {
+  font-size: 15px;
+  margin-top: 30px;
+  color: #757575; }
+
+.validity {
+  bottom: 0;
+  left: 50%;
+  width: 100%;
+  height: 36px;
+  position: absolute;
+  margin-left: -50%;
+  line-height: 36px;
+  background: #f9f9f9;
+  text-align: center;
+  color: #757575;
+  font-size: 14px; }
+
+.list-1 {
+  width: 220px;
+  height: 320px;
+  box-shadow: 0 2px 10px rgba(37, 37, 37, 0.3);
+  position: relative;
+  margin: 0 10px;
+  padding: 0 20px; }
+
+.describe-prices {
+  font-size: 36px;
+  font-family: ProximaNova-Regular;
+  color: #212121; }
+
+.price-list {
+  margin: 50px 0; }
+
+.plan {
+  max-width: 960px;
+  margin: 0 auto; }
+
+.font-number {
+  font-family: Avenir; }
+
+.list-1:nth-child(2) .price {
+  color: #695fbb; }
+
+.list-1:nth-child(3) .price {
+  color: #1da9a7; }
+
+.list-1:nth-child(4) .price {
+  color: #6fb5e1; }
+
+.Warranty-offer h1 {
+  margin-top: 100px; }
+
+.offer-list {
+  margin: 64px auto;
+  width: 1092px;
+  padding: 0 66px; }
+
+.offer {
+  position: relative;
+  margin: 0 15px 30px;
+  padding: 13px 30px;
+  background-color: #fff;
+  font-size: 14px;
+  box-shadow: 0 6px 12px rgba(32, 33, 39, 0.08);
+  display: inline-block; }
+
+.offer-1 {
+  width: 300px;
+  height: 250px; }
+  .offer-1 img {
+    margin: 24px auto; }
+
+.offer-2 {
+  width: 465px;
+  height: 200px; }
+  .offer-2 img {
+    margin: 37px 16px 0 30px; }
+
+.remark {
+  font-size: 20px;
+  font-family: ProximaNova-Regular;
+  color: #333;
+  line-height: 20px; }
+
+.remark-info {
+  margin-top: 11px;
+  font-size: 14px;
+  font-family: ProximaNova-Regular;
+  color: #999;
+  line-height: 14px; }
+
+.offer-2 .remark {
+  margin-top: 56px; }
+
+.step-header {
+  margin-top: 100px; }
+
+.step-list {
+  margin: 90px auto;
+  width: 960px;
+  font-size: 0;
+  text-align: center; }
+
+.claim_step {
+  position: relative;
+  border-radius: 8px;
+  font-size: 14px;
+  width: 439px;
+  height: 130px; }
+  .claim_step p {
+    color: #757575;
+    font-size: 14px; }
+  .claim_step span {
+    width: 123px;
+    font-size: 64px;
+    font-family: ProximaNova-Bold;
+    font-weight: 600;
+    line-height: 1; }
+  .claim_step:after {
+    top: 59px;
+    right: -7px;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    content: "";
+    border-style: solid;
+    border-width: 1px 1px 0 0;
+    background-color: #fff;
+    color: #f57517;
+    transform: rotate(45deg); }
+
+.claim_step_one {
+  border: 1px solid #f57517; }
+  .claim_step_one span {
+    color: #f57517; }
+
+.claim_step_two {
+  border: 1px solid #f5bc43;
+  margin-left: auto; }
+  .claim_step_two span {
+    color: #f5bc43; }
+  .claim_step_two:after {
+    color: #f5bc43;
+    left: -7px;
+    border-width: 0 0 1px 1px; }
+  .claim_step_two a {
+    color: #ff6700; }
+
+.claim_step_three {
+  border: 1px solid #7aaa4b; }
+  .claim_step_three span {
+    color: #7aaa4b; }
+  .claim_step_three:after {
+    color: #7aaa4b; }
+
+.claim_step_four {
+  border: 1px solid #00acc1;
+  margin-left: auto; }
+  .claim_step_four span {
+    color: #00acc1; }
+  .claim_step_four:after {
+    color: #00acc1;
+    left: -7px;
+    border-width: 0 0 1px 1px; }
+
+.claim_step_five {
+  border: 1px solid #695fbb; }
+  .claim_step_five span {
+    color: #695fbb; }
+  .claim_step_five:after {
+    color: #695fbb; }
+
+.time_line {
+  width: 532px;
+  height: 1px;
+  margin: 0 auto;
+  background-color: #ddd;
+  font-size: 0;
+  transform: rotate(90deg);
+  top: -414px;
+  position: relative; }
+  .time_line .yellow {
+    margin-left: 119px;
+    background: #f5bc43; }
+  .time_line .green {
+    margin-left: 119px;
+    background: #7aaa4b; }
+  .time_line .purple {
+    margin-left: 119px;
+    background: #695fbb; }
+  .time_line .cyan {
+    margin-left: 119px;
+    background: #00acc1; }
+  .time_line .orange {
+    background: #ff6700; }
+
+.milestone {
+  position: relative;
+  display: inline-block;
+  top: -5px;
+  width: 11px;
+  height: 11px;
+  border-radius: 6px; }
+
+.eligibility {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 96px; }
+  .eligibility h1 {
+    margin-top: 100px; }
+  .eligibility .condition_list {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 60px; }
+  .eligibility ol {
+    height: 345px; }
+    .eligibility ol li {
+      color: #757575;
+      font-family: Proxima Nova;
+      font-size: 15px;
+      margin-top: 15px;
+      width: 430px; }
+  .eligibility li:nth-child(1), .eligibility li:nth-child(7) {
+    margin-top: 0 !important; }
+  .eligibility li:nth-child(n+7) {
+    margin-left: 100px; }
+
+.faq-question {
+  position: relative;
+  padding-bottom: 50px; }
+  .faq-question h1 {
+    margin-top: 100px; }
+
+.faq-wrapper {
+  width: 990px;
+  margin: 60px auto 0; }
+  .faq-wrapper li {
+    background: #f5f5f5;
+    margin-bottom: 10px; }
+  .faq-wrapper a {
+    position: relative;
+    text-decoration: none;
+    padding: 25px 0 25px 30px;
+    color: #757575;
+    line-height: 40px; }
+    .faq-wrapper a p {
+      top: 0;
+      right: 0;
+      width: 90px;
+      height: 90px;
+      position: absolute;
+      content: ""; }
+      .faq-wrapper a p:before {
+        top: 35px;
+        right: 33px;
+        width: 0;
+        height: 0;
+        position: absolute;
+        content: "";
+        border-style: solid;
+        border-width: 18px 12px 0 12px;
+        border-color: #757575 transparent transparent transparent;
+        transition: .3s ease-out; }
+      .faq-wrapper a p:hover {
+        background: #e0e0e0; }
+  .faq-wrapper a[aria-expanded="true"] p:before {
+    transform: rotate(180deg); }
+  .faq-wrapper .faq-detail {
+    padding: 0 52px 30px;
+    line-height: 1.8;
+    color: #757575; }
+    .faq-wrapper .faq-detail p {
+      font-size: 14px; }
+  .faq-wrapper table {
+    border-collapse: collapse; }
+    .faq-wrapper table th, .faq-wrapper table td {
+      padding: 8px 24px;
+      font-size: 14px;
+      border: 1px solid #999; }
+
 /*# sourceMappingURL=main.css.map */
